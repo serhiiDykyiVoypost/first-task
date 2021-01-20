@@ -13,6 +13,7 @@ interface ButtonProps {
   uppercase?: boolean;
   size?: 'large' | 'small' | 'medium' | undefined;
   type?: 'button' | 'submit' | 'reset';
+  startIcon?: object;
 }
 
 const Button: React.FC<ButtonProps> = props => {
@@ -20,15 +21,16 @@ const Button: React.FC<ButtonProps> = props => {
 
   const {
     children,
-    color = 'default',
-    variant = 'contained',
+    color,
+    variant,
     disabled,
     fullWidth,
     onClick,
     className,
     uppercase,
-    size = 'large',
+    size,
     type,
+    startIcon,
   } = props;
 
   const uppercaseClasses = {
@@ -46,6 +48,7 @@ const Button: React.FC<ButtonProps> = props => {
       size={size}
       type={type}
       classes={uppercaseClasses}
+      startIcon={startIcon}
     >
       {children}
     </ButtonBase>

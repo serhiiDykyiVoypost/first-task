@@ -30,7 +30,7 @@ const shadows = {
     'inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2)',
 };
 
-const primaryFontFamily = 'Lato, sans-serif';
+const primaryFontFamily = 'Gilroy, sans-serif';
 
 const theme = createMuiTheme({
   palette: {
@@ -39,7 +39,7 @@ const theme = createMuiTheme({
       white: colors.white,
     },
     primary: {
-      main: colors.primaryGreenColor,
+      main: colors.blue,
     },
     grey: {
       400: colors.secondaryGreyBackgroundColor,
@@ -193,13 +193,14 @@ const theme = createMuiTheme({
           outline: 'none',
         },
       },
-
+      // change there
       sizeSmall: {
-        fontSize: 20,
+        fontSize: 16,
+        fontStyle: 'normal',
         lineHeight: 1,
-        fontWeight: 700,
+        fontWeight: 800,
         '&$contained': {
-          padding: defaultTheme.spacing(1.25, 2.5),
+          padding: defaultTheme.spacing(2, 5.9),
         },
       },
 
@@ -235,7 +236,7 @@ const theme = createMuiTheme({
         borderWidth: 3.5,
         '&:hover': {
           borderWidth: 3.5,
-          borderColor: colors.primaryGreenColor,
+          borderColor: colors.blue,
         },
         '&:active': {
           borderWidth: 3.5,
@@ -250,7 +251,7 @@ const theme = createMuiTheme({
       // contained button
       contained: {
         color: colors.white,
-        background: colors.primaryGreenGradient,
+        background: colors.blue,
         boxShadow: shadows.primaryBoxShadow,
         border: 'none',
         '&:hover': {
@@ -267,10 +268,10 @@ const theme = createMuiTheme({
       containedPrimary: {
         color: colors.white,
         '&:hover': {
-          backgroundColor: colors.white,
+          backgroundColor: colors.blue,
         },
         '&:active': {
-          backgroundColor: colors.white,
+          backgroundColor: colors.blue,
         },
       },
     },
