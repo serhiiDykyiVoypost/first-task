@@ -21,7 +21,7 @@ function App() {
         >
           Sing Up With Google
         </Button>
-        <Form></Form>
+        <Form autoComplete="off" required onClick={() => null}></Form>
       </div>
     </ThemeProvider>
   );
