@@ -16,8 +16,7 @@ const colors = {
 };
 
 const shadows = {
-  primaryBoxShadow:
-    '-10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4)',
+  primaryBoxShadow: 'none',
   inputOutlinedBoxShadow:
     'inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2), -1px -1px 3px #FFFFFF, 1.5px 1.5px 2px rgba(174, 174, 192, 0.4)',
   paperBoxShadow:
@@ -89,9 +88,11 @@ const theme = createMuiTheme({
         textOverflow: 'ellipsis',
       },
       h1: {
-        fontSize: 25,
-        fontWeight: 700,
+        fontSize: 32,
+        fontWeight: 800,
         lineHeight: 1.2,
+        color: colors.black,
+        marginBottom: defaultTheme.spacing(4),
       },
       h2: {
         fontSize: 25,
