@@ -1,6 +1,5 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import { Typography } from '@material-ui/core';
-import useStyles from './useStyles';
 
 interface HedingProps {
   children?: React.ReactNode;

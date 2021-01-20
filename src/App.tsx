@@ -4,6 +4,7 @@ import theme from './components/common/theme';
 import Button from './components/Unknown/Button';
 import { GoogleIcon } from './components/Unknown/icons';
 import Heding from './components/Unknown/Heading/Heading';
+import Form from './components/Unknown/Form';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         >
           Sing Up With Google
         </Button>
+        <Form></Form>
       </div>
     </ThemeProvider>
   );

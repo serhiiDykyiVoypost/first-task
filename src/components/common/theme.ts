@@ -237,7 +237,7 @@ const theme = createMuiTheme({
         borderWidth: 3.5,
         '&:hover': {
           borderWidth: 3.5,
-          borderColor: colors.blue,
+          borderColor: colors.grey,
         },
         '&:active': {
           borderWidth: 3.5,
